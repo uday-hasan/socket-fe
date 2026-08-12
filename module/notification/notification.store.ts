@@ -193,7 +193,7 @@ export const useNotificationStore = create<NotificationState>((set, get) => ({
     // Matches the `path: "/ws"` your backend's WebSocketServer was
     // configured with — this has to match exactly or the upgrade request
     // never reaches your server.on("upgrade") listener at all.
-    const SOCKET_URL = "ws://socket-be.udayhasan.dev/ws";
+    const SOCKET_URL = "wss://socket-be.udayhasan.dev/ws";
     const ws = new WebSocket(SOCKET_URL);
 
     ws.onopen = () => {
