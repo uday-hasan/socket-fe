@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Send, CheckCircle2, AlertCircle, Radio } from "lucide-react";
 
 // Adjust this to match your actual route from router/index.ts if it differs
-const NOTIFY_URL = "http://localhost:8000/api/v1/notification";
+const NOTIFY_URL = `${process.env.NEXT_PUBLIC_API_URL}/notification`;
 // const NOTIFY_URL = "https://socket-be.udayhasan.dev/api/v1/notification";
 
 type SubmitState = "idle" | "loading" | "success" | "error";
